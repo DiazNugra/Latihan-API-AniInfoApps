@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@color/overlayBlackBG">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/aniinfo"
+            android:layout_centerHorizontal="true">
+
+        </ImageView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextJudulAnime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Masukan Judul"
+            android:padding="15dp"
+            android:textColorHint="@color/hint"
+            android:layout_below="@+id/logo"
+            android:textSize="18sp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tombolCari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextJudulAnime"
+            android:layout_centerHorizontal="true"
+            android:text="Cari">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:id="@+id/titleJudulAnime"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tombolCari"
+            android:layout_marginStart="10dp"
+            android:text="Judul">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/JudulAnime"
+            style="@style/contentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleJudulAnime"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_shape_bg">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/titleScore"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JudulAnime"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Rating Di MyAnimeList">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/contentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleScore"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_shape_bg">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/titleMalId"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="MyAnimeList URL">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/malID"
+            style="@style/contentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleMalId"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_shape_bg"
+            android:focusable="true"
+            android:linksClickable="true">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/titleSinopsis"
+            style="@style/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/malID"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Sinopsis">
+
+        </TextView>
+
+            <TextView
+                android:id="@+id/sinopsis"
+                style="@style/contentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleSinopsis"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_shape_bg"
+                android:scrollbars="vertical"
+                android:textSize="22dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+</ScrollView>
